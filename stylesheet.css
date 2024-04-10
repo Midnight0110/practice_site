@@ -1,0 +1,411 @@
+@charset "UTF-8";
+
+html {
+    box-sizing: border-box;
+}
+    * {
+        box-sizing: border-box;
+    }
+/* * means it calls up everything*/
+
+body{
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    text-align: center;
+    color: #ebe9e9;
+    background-color: rgba(159, 115, 184, 0.25);
+    max-width: 1200px;
+}
+main{
+    background-color: #ebe9e9;
+}
+
+/*----HEADERS-----*/
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font: bold 2.2em;
+    color: #684f6d;
+    text-shadow: .05em .05em .1em gray;
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font: bold 1.2em;
+    text-transform: uppercase;
+    color: #704F44;
+    letter-spacing: .2em;
+    text-align: center;
+}
+
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    text-align: center;
+    color: #ddc491;
+    
+}
+
+/*-------Nav style----------*/
+.nav_bar{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: rgba(98, 83, 107);
+    padding: 1.5em;
+    margin: 0;
+}
+
+/* style nav links*/
+.nav_bar a{
+    color: #ebe9e9;
+    padding: 60px 40px;
+    text-decoration: none;
+   
+}
+/* hover style*/
+.nav_bar a:hover{
+    background-color: #ebe9e9;
+    color: rgba(98, 83, 107);
+}
+
+/*add logo - push to one side*/
+li.logo{
+    margin-right: auto;
+}
+
+
+/*-----HERO IMAGE------*/
+.hero_image{
+    background-image: linear-gradient(rgba(98, 83, 107, 0.4), rgba(98, 83, 107, 0.4)), url(images/coffee_beans.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+                                        
+}
+.hero_header{
+    text-align: left;
+    position: absolute;
+    color: white;
+    top: 40%;
+    text-shadow: .05em .05em .1em black;
+    font-size: 3em;
+    margin: 20px;
+}
+.hero_text{
+    text-align: left;
+    position: absolute;
+    color: white;
+    top: 50%;
+    text-shadow: .05em .05em .1em black;
+    font-size: large;
+    margin: 20px;
+}
+.button{
+    background-color: #684f6d;
+    border: solid;
+    border-color: #704F44;
+    color: white;
+    display: inline-block;
+    font-size: 18px;
+    margin: 6px 3px;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*------LISTS-----*/
+dd{
+    font-weight: bold;
+    color: #704F44;
+    
+}
+
+dt{
+    font-weight: bolder;
+    color: #684f6d;
+    
+}
+
+li{
+    font-weight: bold;
+    color: #684f6d;
+    font-size: medium;
+    text-align: center;
+}
+
+/*-----INDEX GRID STYLES------*/
+#index_container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: 
+    'welcome welcome welcome'
+    'about about about'
+    'hlights hlights hlights'
+    'local coffee organic'
+    'products products products'
+    'tea  mac bread'
+    'button button button'
+    'book book book'
+    'review review review'
+
+    ;
+     
+}
+
+#welcome{
+    grid-area: welcome;
+    font-size: 50px;
+    text-align: justify;
+    padding-right: 240px;
+    padding-left: 240px;
+    margin-top: 40px;
+
+}
+#button{
+    grid-area: button;
+    font-size: 25px;
+    text-align: center;
+    
+
+}
+#highlights{
+    grid-area: hlights;
+    font-size: 20px;
+    text-align: center;
+    
+  
+}
+.highlight1{
+    grid-area: coffee;
+    
+
+}
+.highlight2{
+    grid-area: organic;
+  
+   
+
+}
+.highlight3{
+    grid-area: local;
+    
+
+}
+.about_us{
+    grid-area: about;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+#products{
+    grid-area: products;
+    font-size: 20px;
+    text-align: center;
+    
+}
+.product1{
+    grid-area: tea;
+  
+
+}
+.product2{
+    grid-area: bread;
+    
+
+
+}
+.product3{
+    grid-area: mac;
+    
+   
+
+}
+#book_club{
+    grid-area: book;
+    font-size: 20px;
+    
+}
+#reviews{
+    grid-area: review;
+    font-size: 20px;
+    text-align: center;
+ 
+
+}
+
+/*------PARAGRAPH--------*/
+strong{
+    font-style: italic;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: medium;
+    color: #0b0b0c;
+}
+
+/*-------Menu items--------*/
+#drinks{
+    border: 2px dotted;
+    background-color: rgba(98, 83, 107, 0.25);
+    padding: 5px 20px;
+    margin: 10px 20px;
+}
+
+#treats{
+    border: 2px dotted;
+    background-color: rgba(98, 83, 107, 0.25);
+    padding: 5px 20px;
+    margin: 10px 20px;
+}
+
+#books{
+    border: 2px dotted;
+    background-color: rgba(98, 83, 107, 0.25);
+    padding: 5px 20px;
+    margin: 10px 20px;
+}
+.price{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.names{
+    font-weight: bolder;
+    font-style: italic;
+    color: #684f6d;
+}
+/*-----IMAGES---*/
+img{
+    max-width: 100%;
+}
+
+
+/*------IMAGE GALLERY------*/
+/*-------flex-----*/
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container img{
+    width: 400px;
+    margin: 10px;
+
+}
+.container img:hover{
+    transform: scale(1.05);
+}
+p{
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+}
+
+/*
+-----grid------
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+.img{
+    max-width: 100%;
+}
+.img:hover{
+    transform: scale(1.05);
+}
+*/
+
+
+
+/*--------MEDIA QUERY---------*/
+@media screen and (max-width: 800px){
+
+    #index_container{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(11, auto);
+        grid-template-areas: 
+        'welcome welcome'
+        'about about'
+        'hlights hlights'
+        'local coffee'
+        'organic organic'
+        'products products'
+        'tea  mac'
+        'bread bread'
+        'button button'
+        'book book'
+        'review review'
+        ;
+        justify-content: center;
+        background-color: white;
+         
+    }
+
+    #welcome{
+        margin: 40px 200px 0px 200px;
+        text-align: justify;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .nav_bar a{
+        padding: 60px 20px;
+    }
+    .logo{
+        width: 150px;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+
+    #index_container{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(13, auto);
+        grid-template-areas: 
+        'welcome'
+        'about'
+        'hlights'
+        'local'
+        'coffee'
+        'organic'
+        'products'
+        'tea'
+        'mac'
+        'bread'
+        'button'
+        'book'
+        'review'
+        ;
+        justify-content: center;
+        background-color: white;
+         
+    }
+
+    .nav_bar a{
+        padding: 55px 5px;
+    }
+    .logo{
+        width: 200pxpx;
+    }
+
+    body{
+        font-size: 15px;
+    }
+    #welcome{
+        margin: 40px 100px 0px 100px;
+        text-align: justify;
+    }
+}
